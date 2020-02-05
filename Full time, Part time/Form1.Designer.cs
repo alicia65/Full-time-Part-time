@@ -53,21 +53,23 @@
             this.lblStatus.TabIndex = 3;
             this.lblStatus.Text = "Status shown here";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
             // trkCredits
             // 
             this.trkCredits.Location = new System.Drawing.Point(87, 128);
             this.trkCredits.Maximum = 24;
             this.trkCredits.Name = "trkCredits";
-            this.trkCredits.Size = new System.Drawing.Size(268, 56);
+            this.trkCredits.Size = new System.Drawing.Size(281, 56);
             this.trkCredits.TabIndex = 4;
             this.trkCredits.Scroll += new System.EventHandler(this.trkCredits_Scroll);
             // 
             // lblCredits
             // 
-            this.lblCredits.Location = new System.Drawing.Point(386, 138);
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Location = new System.Drawing.Point(390, 128);
             this.lblCredits.Name = "lblCredits";
-            this.lblCredits.Size = new System.Drawing.Size(0, 17);
+            this.lblCredits.Size = new System.Drawing.Size(16, 17);
             this.lblCredits.TabIndex = 5;
             this.lblCredits.Text = "0";
             this.lblCredits.Click += new System.EventHandler(this.lblCredits_Click);
@@ -83,6 +85,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Full time, half time_TrackBar?";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trkCredits)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

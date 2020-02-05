@@ -42,5 +42,15 @@ namespace Full_time__Part_time
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
